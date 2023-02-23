@@ -48,7 +48,7 @@ a {
     border: 1px #646d7c solid;
     color:#f4f4f4
 }
-a:hover, a:active {
+.nav a:hover, .nav a:focus {
     background: #49505F;
 }
 .imgsection{
@@ -150,21 +150,21 @@ section h2 {
 .box3 button { background: #842407;}
 .box3 button:hover { background: #C9302C;}
 
-.sec3{
+.sec3-parallax{
     background-image: url('img/bg-2.jpg');
     height: 40vh;
     margin-top: 50px;
 }
-.sec3 .imgtext{
+.sec3-parallax .imgtext{
     text-align: center;
     top: 20%;
 }
-.sec3 h2{
-    font-size: 34px;
-    text-shadow: 2px 2px 0px #AAAAAA;
+.sec3-parallax h2,.sec4-parallax h2{
+    font-size: 36px;
+    text-shadow: 2px 2px 0px #000000;
     padding-bottom: 15px;
 }
-.sec3 p{
+.sec3-parallax p,.sec4-parallax p{
     font-size: 18px;
     line-height: 28px;
     padding: 0px 15px;
@@ -191,12 +191,35 @@ section h2 {
 }
 .section3 .one-four{
     flex-wrap: wrap;
-    /* display:flex;
-    flex-direction: column; */
+}
+.sec4-parallax{
+    background-image: url('img/bg-3.jpg');
+    /* height: 60vh; */
+    margin-top: 50px;
+}
+.sec4-parallax .imgtext {
+    top: 20%;
 }
 
 
 
+footer {
+    text-align: center;
+    color:#49505F;
+}
+.footer-content h2 {
+    font-size: 32px;
+    padding: 25px;
+    font-weight: 400;
+}
+.footer-content p {
+    font-size: 14px;
+    padding-bottom: 55px;
+}
+.copyright {
+    padding: 35px 0px;
+    font-size: 12px;
+}
 
 
 
@@ -249,7 +272,7 @@ section h2 {
         margin-bottom: 30PX;
         text-align: center;
     }
-    .sec3 {
+    .sec3-parallax {
         height: 40vh;
     }
     .section3 .container {
@@ -283,6 +306,10 @@ section h2 {
     .imgsection{
         height: 55vh;
     }
+    .sec3-parallax {
+        height: 40vh;
+    }
+
     .col span { margin-left: 0; }
     .section3 .info-col .container {
         flex-direction: column;
@@ -301,12 +328,12 @@ section h2 {
 }
 @media only screen and (max-width: 520){
     .container{
-/*         width:520px; */
         margin: auto; 
     }
     .section3 .one-four{
         flex-wrap: wrap;
-        /* display:flex;
-        flex-direction: column; */
+    }
+    .section3 .col,.one-four{
+        margin-bottom: 30px;
     }
 }

@@ -1,5 +1,5 @@
 *{    
-    /* border: 1px #f60404 solid;  */
+    border: 1px #f60404 solid; 
     margin: 0;
     padding: 0;
 }
@@ -156,12 +156,12 @@ section h2 {
     text-align: center;
     top: 20%;
 }
-.sec3-parallax h2{
+.sec3-parallax h2, .sec4-parallax h2{
     font-size: 34px;
     text-shadow: 2px 2px 0px #AAAAAA;
     padding-bottom: 15px;
 }
-.sec3-parallax p{
+.sec3-parallax p, .sec4-parallax p{
     font-size: 18px;
     line-height: 28px;
     padding: 0px 15px;
@@ -193,20 +193,36 @@ section h2 {
     margin-bottom: 30px;
 }
 
-/* ---------Section 4 Details----------- */
-/* .contact-info{
-    width: 50%;
-} */
+/* ---------Section 4 Form----------- */
+.sec4-parallax{
+    background-image: url('img/bg-3.jpg');
+    height: 70vh;
+    margin-top: 50px;
+}
+.sec4-parallax .imgtext {
+    top: 10%;
+}
+input,
+textarea {
+    background: rgba(242, 242, 242, 0.4);;
+    border-radius: 6px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    height: auto;
+}
 .input-details{
     display: flex;
     flex-direction: column;
     width: 80vw;
     margin: 0 auto;
     max-width: 800px;
-
-}
-.input-details{
-
+    margin: 20px 20px 20px 0;
 }
 .inputdiv{
     display: flex;
@@ -216,17 +232,11 @@ section h2 {
     margin: 0 auto;
     max-width: 800px;
 }
-.textarea {
-    /* width: 50%; */
+.input-textarea{
+    margin: 20px auto;
 }
-.sec4-parallax{
-    background-image: url('img/bg-3.jpg');
-    height: 70vh;
-    margin-top: 50px;
-}
-.sec4-parallax .imgtext {
-    top: 20%;
-}
+
+
 /* ---------Footer----------- */
 
 footer {

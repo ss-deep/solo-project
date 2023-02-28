@@ -1,5 +1,4 @@
 *{    
-    /* border: 1px #f60404 solid;  */
     margin: 0;
     padding: 0;
 }
@@ -10,6 +9,9 @@ body {
     letter-spacing: 0.5px;
     overflow-x: hidden;
 }
+
+/* ---------Navigation----------- */
+
 .toggle-button{
     z-index: 999;
     cursor: pointer;
@@ -49,6 +51,9 @@ a {
 a:hover, a:active {
     background: #49505F;
 }
+
+/* ---------Section 1----------- */
+
 .imgsection{
     background-image: url('img/img4.jpg');
     width: 100%;
@@ -60,7 +65,9 @@ a:hover, a:active {
 }
 .imgsection .imgtext {
     position: absolute;
-    top: 40%;
+    top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
     width: 100%;
     text-align: center;
     color: #f4f4f4;
@@ -77,6 +84,9 @@ a:hover, a:active {
     letter-spacing: 0.5px;
     padding-top: 8px;
 }
+
+/* ---------Section 2 ----------- */
+
 .info-boxes, .info-col {
     margin: auto; 
     padding-top: 70px;
@@ -108,9 +118,9 @@ section h2 {
     border-radius: 5px;
     cursor: pointer;
     transition-duration: 0.4s;
-    display: block; /* aligns button to center */
-    margin-left: auto;/*aligns button to center*/
-    margin-right: auto;/*aligns button to center*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
     border: none;
     color: #f2f2f2;
@@ -147,6 +157,8 @@ section h2 {
 .box3 button { background: #842407;}
 .box3 button:hover { background: #C9302C;}
 
+/* ---------Section 3----------- */
+
 .sec3-parallax{
     background-image: url('img/bg-2.jpg');
     height: 40vh;
@@ -154,14 +166,13 @@ section h2 {
 }
 .sec3-parallax .imgtext{
     text-align: center;
-    top: 20%;
 }
 .sec3-parallax h2, .sec4-parallax h2{
     font-size: 34px;
     text-shadow: 2px 2px 0px #AAAAAA;
     padding-bottom: 15px;
 }
-.sec3-parallax p, .sec4-parallax p{
+.sec3-parallax p{
     font-size: 18px;
     line-height: 28px;
     padding: 0px 15px;
@@ -194,17 +205,16 @@ section h2 {
 }
 
 /* ---------Section 4 Form----------- */
+
 .sec4-parallax{
     background-image: url('img/bg-3.jpg');
     height: 70vh;
     margin-top: 30px;
 }
-.sec4-parallax .imgtext {
-    top: 10%;
-}
 input,
 textarea {
-    background-color: rgba(242, 242, 242, 0.4);
+    /* background-color: rgba(242, 242, 242, 0.4); */
+    background-color: rgba(225, 51, 51, 0.4);
     border-radius: 6px;
     border: none;
     font-size: 14px;
@@ -217,14 +227,12 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 50%;
-    /* margin: 0 auto; */
     margin: 10px;
 }
 .inputdiv{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    width: 100%;
     margin: 0 auto;
     max-width: 700px;
     color: #000000;
@@ -251,7 +259,6 @@ textarea {
     border: 0.5px #E6E6E6 solid;
 }
 
-
 /* ---------Footer----------- */
 
 footer {
@@ -272,9 +279,8 @@ footer {
     font-size: 12px;
 }
 
-
-
 /* --------------Media Queries---------------- */
+
 @media only screen and (max-width: 768px) {
     .toggle-button {
         background: #333333;
@@ -324,6 +330,18 @@ footer {
     .section3 .one-four{
         flex-wrap: wrap;
     }
+    .inputdiv{
+        flex-direction: column;
+        max-width: 600px;
+        padding: 0 10px;
+    }
+    .input-details{
+        width: auto;
+    }
+    textarea{
+        height:100px;
+    }
+
 }
 @media only screen and (max-width: 1199px){
     .container{
@@ -335,9 +353,6 @@ footer {
         width:95%;
         margin:auto;
     }
-    /* .sec4-parallax{
-        height: 55vh;
-    } */
 }
 @media only screen and (max-width: 991px) {
     .nav {
@@ -351,11 +366,8 @@ footer {
         flex-direction: column;
     }
 }
-@media only screen and (max-width: 520){
-    .container{
-        margin: auto; 
+@media only screen and (max-width: 520px){
+    .sec4-parallax {
+        height: 100vh;
     }
-    /* .sec3-parallax {
-        height: 30vh;
-    } */
 }

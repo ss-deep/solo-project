@@ -1,5 +1,5 @@
 *{    
-    border: 1px #f60404 solid; 
+    /* border: 1px #f60404 solid;  */
     margin: 0;
     padding: 0;
 }
@@ -102,7 +102,7 @@ section h2 {
     padding: 20px;
     line-height: 22px;
  }
- section button {
+ .section2 button {
     padding: 10px 30px;
     font-size: 18px;
     border-radius: 5px;
@@ -197,43 +197,58 @@ section h2 {
 .sec4-parallax{
     background-image: url('img/bg-3.jpg');
     height: 70vh;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .sec4-parallax .imgtext {
     top: 10%;
 }
 input,
 textarea {
-    background: rgba(242, 242, 242, 0.4);;
+    background-color: rgba(242, 242, 242, 0.4);
     border-radius: 6px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: none;
-    color: #000000;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     margin-bottom: 20px;
-    height: auto;
+    height: 100%;
 }
 .input-details{
     display: flex;
     flex-direction: column;
-    width: 80vw;
-    margin: 0 auto;
-    max-width: 800px;
-    margin: 20px 20px 20px 0;
+    width: 50%;
+    /* margin: 0 auto; */
+    margin: 10px;
 }
 .inputdiv{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    width: 80vw;
+    width: 100%;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 700px;
+    color: #000000;
+}
+.inputdiv p{
+    background-color: rgba(242, 242, 242, 0.4);
+    margin:10px;
+    padding: 20px 20px;
+    border-radius: 6px;
+    font-size: 16px;
 }
 .input-textarea{
-    margin: 20px auto;
+    resize: none;
+}
+.send-button {
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border: none;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 0.5px #E6E6E6 solid;
 }
 
 
@@ -320,6 +335,9 @@ footer {
         width:95%;
         margin:auto;
     }
+    /* .sec4-parallax{
+        height: 55vh;
+    } */
 }
 @media only screen and (max-width: 991px) {
     .nav {
@@ -337,7 +355,7 @@ footer {
     .container{
         margin: auto; 
     }
-    .sec3-parallax {
+    /* .sec3-parallax {
         height: 30vh;
-    }
+    } */
 }

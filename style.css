@@ -213,8 +213,8 @@ section h2 {
 }
 input,
 textarea {
-    /* background-color: rgba(242, 242, 242, 0.4); */
-    background-color: rgba(225, 51, 51, 0.4);
+    background-color: rgba(242, 242, 242, 0.4);
+    /* background-color: rgba(225, 51, 51, 0.4); */
     border-radius: 6px;
     border: none;
     font-size: 14px;
@@ -369,5 +369,8 @@ footer {
 @media only screen and (max-width: 520px){
     .sec4-parallax {
         height: 100vh;
+    }
+    input, textarea{
+        margin:5px;
     }
 }
